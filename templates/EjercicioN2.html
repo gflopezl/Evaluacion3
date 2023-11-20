@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio N2</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styleEj2.css">
+</head>
+<body>
+    <form method="post">
+        <label for="nombre1">Nombre 1:</label>
+        <input type="text" id="nombre1" name="nombre1" required>
+        <br>
+        <label for="nombre2">Nombre 2:</label>
+        <input type="text" id="nombre2" name="nombre2" required>
+        <br>
+        <label for="nombre3">Nombre 3:</label>
+        <input type="text" id="nombre3" name="nombre3" required>
+        <br>
+        <button type="submit">Enviar</button>
+        {% if nombre_mas_largo is defined and cantidad_caracteres is defined %}
+        <p>El nombre con mayor cantidad de caracteres es: {{ nombre_mas_largo }}</p>
+        <br>
+        <p> El nombre tiene: {{ cantidad_caracteres }} caracteres</p>
+        {% endif %}
+        </form>
+</body>
+</html>

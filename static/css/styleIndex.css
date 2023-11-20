@@ -1,0 +1,29 @@
+body {
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .container {
+            margin-top: 250px;
+        }
+
+        .ejercicio1,
+        .ejercicio2 {
+            margin-bottom: 20px;
+            margin : 20px 600px;
+        }
+
+        a {
+            background-color: #3336FF;
+            color: white;
+            display: block;
+            padding: 30px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #3393FF;
+            color: #fff;
+        }
